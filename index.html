@@ -37,11 +37,11 @@
     .dcr-bar a.dcr-home{display:flex;align-items:center;gap:12px;text-decoration:none;flex:none}
     .dcr-bar img.dcr-logo{width:32px;height:32px;border-radius:50%;flex:none}
     .dcr-bar img.dcr-wordmark{height:34px;width:auto;flex:none}
-    /* hero */
-    .hero{padding:clamp(64px,9vw,120px) 0 clamp(48px,6vw,72px)}
-    .hero h1{font:800 clamp(48px,8vw,110px)/.94 var(--display);letter-spacing:-.035em;margin:0;max-width:14ch}
-    .hero .deck{font-size:clamp(17px,2vw,22px);line-height:1.45;color:var(--muted);max-width:640px;margin:28px 0 0}
-    .hero .deck strong{color:var(--ink);font-weight:600}
+    /* front page nameplate - obvious homepage, not an article */
+    .frontpage{padding:clamp(56px,8vw,96px) 0 clamp(40px,5vw,56px);text-align:center;border-bottom:1px solid var(--line)}
+    .frontpage .kicker{margin:0 0 22px}
+    .frontpage .nameplate{width:min(440px,78%);height:auto;margin:0 auto 22px}
+    .frontpage .tagline{color:var(--muted);font-size:clamp(16px,2vw,20px);margin:0 auto;max-width:580px;line-height:1.5}
     /* sections */
     section{padding:clamp(48px,6vw,80px) 0}
     .section-head{display:grid;grid-template-columns:220px 1fr;gap:40px;margin-bottom:36px}
@@ -74,10 +74,10 @@
 <body>
   <header class="dcr-bar"><div class="dcr-bar-inner"><a class="dcr-home" href="./"><img class="dcr-logo" src="assets/dcr-logo-icon-transparent.png" alt="Double Click Report logo" width="64" height="64" /><img class="dcr-wordmark" src="assets/dcr-logo-wordmark-transparent.png" alt="Double Click Report" /></a></div></header>
 
-  <header class="hero"><div class="wrap">
-    <p class="kicker">Independent publication · Est. 2026</p>
-    <h1>Why did it happen then?</h1>
-    <p class="deck">Most tech analysis answers <strong>what happened</strong>. Double Click Report chases the more interesting question: <strong>why it happened then</strong> - and what that says about what's next.</p>
+  <header class="frontpage"><div class="wrap">
+    <p class="kicker">Independent publication</p>
+    <img class="nameplate" src="assets/dcr-logo-wordmark-transparent.png" alt="Double Click Report" />
+    <p class="tagline">Evidence-based deep dives on the companies and products shaping tech.</p>
   </div></header>
 
   <main>
