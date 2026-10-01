@@ -146,8 +146,8 @@
     .prediction:nth-child(1){background:var(--ink);color:var(--paper);border-color:var(--red)}
     .prediction:nth-child(3),.prediction:nth-child(4){grid-column:span 6}
     .prediction.feature{display:grid;grid-template-columns:1.02fr .98fr;gap:0 48px;align-items:start}
-    .prediction.feature .concept-figure{grid-column:2;grid-row:1 / span 30;margin:0;align-self:stretch;display:flex;flex-direction:column}
-    .prediction.feature .concept-figure img{flex:1;min-height:340px;aspect-ratio:auto;object-fit:cover}
+    .prediction.feature .concept-figure{grid-column:2;grid-row:1 / span 30;margin:0;align-self:center}
+    .prediction.feature .concept-figure img{width:100%;height:auto;aspect-ratio:auto;min-height:0}
     .prediction.feature .concept-figure figcaption{padding:10px 0 0}
     .prediction.feature.flip > :not(.concept-figure){grid-column:2}
     .prediction.feature.flip .concept-figure{grid-column:1}
