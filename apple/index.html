@@ -49,6 +49,17 @@
     .cover-figure img{width:100%;aspect-ratio:21/9;object-fit:cover;filter:saturate(.85) contrast(1.05)}
     .cover-figure figcaption,.inline-figure figcaption{width:min(1180px,calc(100% - 40px));margin:10px auto 0;font-size:11px;color:var(--muted);letter-spacing:.02em}
     .cover-figure figcaption b,.inline-figure figcaption b{color:var(--ink);font-weight:600}
+    .human-layer{background:var(--inverse);color:var(--inverse-ink);width:100vw;margin-left:calc(50% - 50vw);border-top:1px solid var(--line)}
+    .human-layer .wrap{padding:clamp(56px,7vw,96px) 0;display:grid;grid-template-columns:1.25fr .75fr;gap:clamp(32px,5vw,72px);align-items:center}
+    .human-kicker{font:700 12px/1.2 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--red);margin:0 0 16px}
+    .human-layer h2{font:700 clamp(30px,4vw,52px)/1.02 var(--display);letter-spacing:-.025em;margin:0 0 22px;max-width:16ch}
+    .human-layer .prose p{font-size:clamp(16px,1.6vw,19px);line-height:1.68;color:var(--inverse-ink);margin:0 0 1.15em;max-width:62ch}
+    .human-layer .prose p:last-child{margin-bottom:0}
+    .human-layer .prose p:first-of-type::first-letter{font-family:var(--display);font-weight:800;font-size:3.1em;float:left;line-height:.82;padding:4px 10px 0 0;color:var(--red)}
+    .human-figure{margin:0}
+    .human-figure img{width:100%;height:auto;filter:saturate(.92) contrast(1.03);border:1px solid var(--line)}
+    .human-figure figcaption{font-size:11px;color:var(--inverse-muted);margin-top:10px;letter-spacing:.02em;line-height:1.5}
+    .human-figure figcaption b{color:var(--inverse-ink);font-weight:600}
     .inline-figure{margin:44px 0}
     .inline-figure img{width:100%;aspect-ratio:21/9;object-fit:cover;filter:saturate(.85) contrast(1.05)}
     .inline-figure.tall img{aspect-ratio:16/8}
@@ -200,6 +211,8 @@
     footer{padding:34px 0 60px;color:var(--muted);font-size:12px}
     .backtop{float:right;font-weight:800}
     @media(max-width:900px){
+      .human-layer .wrap{grid-template-columns:1fr}
+      .human-figure{max-width:560px}
       .mast-grid,.section-head,.thesis,.now-card,.leader-focus,.state-grid,.forecast{grid-template-columns:1fr}
       .mast{min-height:80vh}.mast-aside{max-width:430px}
       .section-head{gap:12px}.thesis-main{border-right:0;border-bottom:1px solid var(--line);padding-right:0}.thesis-side{padding-left:0}
@@ -266,6 +279,26 @@
     <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Aerial%20view%20of%20Apple%20Park%20dllu.jpg?width=2000" alt="Aerial view of Apple Park, Apple's headquarters in Cupertino, California" />
     <figcaption><b>Apple Park, Cupertino.</b> The headquarters, opened in 2017, is the physical expression of the integration playbook: one ring, everything inside it. Photograph: Daniel L. Lu, CC BY-SA 4.0, via Wikimedia Commons.</figcaption>
   </figure>
+
+  <section class="human-layer" aria-label="The Human Layer">
+    <div class="wrap">
+      <div>
+        <p class="human-kicker">The Human Layer</p>
+        <h2>The shuffle that made me a believer</h2>
+        <div class="prose">
+          <p>I was fifteen when I got an iPod shuffle for my birthday. The original one: a white stick of gum with no screen, a cap that popped off to reveal a USB plug, and room for just enough songs to get lost in. It changed everything for me.</p>
+          <p>Before that, I was a CD kid. I burned mix CDs with the seriousness of a mastering engineer, except my studio was a Discman the size of a paperback that skipped every time the bus hit a pothole. Seventy-four minutes per disc. A binder of them in my backpack. Half the listening time spent swapping plastic.</p>
+          <p>Then came the MP3 players. I tried several, and every one was a small education in disappointment. The software was either a riddle or missing entirely - drag files into a folder and pray. Storage filled up fast, batteries died faster, and the things crashed like it was their job. Each one treated music like data to be managed. None of them felt like they were made by people who actually listened to music.</p>
+          <p>The shuffle was the first player that connected with me as a fan instead of asking me to be its technician. No screen meant no bad interface to fight. You plugged it in, iTunes filled it, and you pressed play and went outside. It understood the real job: a soundtrack for your day, not a gadget to babysit. For the first time, the technology disappeared and only the music was left.</p>
+          <p>That is the Apple move, and it was never about being first. Apple watched everyone else ship the category, then shipped the version that felt inevitable. The reasons are unglamorous and decisive. Hardware and software designed together, so syncing just worked. Ruthless simplification, so there was almost nothing to learn or break. And an obsession with the person holding the thing instead of the spec sheet. The shuffle did not win on storage or features. It won because it was the first music player that felt like it was built by listeners, for listeners.</p>
+        </div>
+      </div>
+      <figure class="human-figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/IPod_Shuffle_1st_Generation.jpg?width=1200" alt="Original first-generation iPod shuffle from 2005, the small white screenless music player" />
+        <figcaption><b>The original iPod shuffle, 2005.</b> No screen, no interface to fight - the product that made the technology disappear. Photograph: Atomicdragon136, CC BY-SA 4.0, via Wikimedia Commons.</figcaption>
+      </figure>
+    </div>
+  </section>
 
   <nav class="jumpbar" aria-label="Report sections"><div class="wrap">
     <a href="#thesis">The Pattern</a><a href="#timeline">The Record</a><a href="#playbook">The Playbook</a><a href="#state">The Ledger</a><a href="#predictions">The Bet</a><a href="#sources">The Receipts</a>
